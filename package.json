@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npm index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,15 @@
   "devDependencies": {
     "nodemon": "^3.1.4",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.20.0",
+    "glob": "^11.0.0",
+    "mongoose": "^8.6.1",
+    "path": "^0.12.7",
+    "router": "^2.0.0",
+    "util": "^0.12.5"
   }
 }
